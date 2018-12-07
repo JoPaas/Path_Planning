@@ -25,6 +25,9 @@ In the picture below the command line output can be seen to understand what is g
 
 ![alt_text][image2]
 
+### Future Improvments
+to make the car navigate the traffic safer the environment model could be extended with a prediction. Like that also the planned path can be optimized and the vehicle can slip through much smaller openings.
+
 #### The map of the highway is in data/highway_map.txt
 Each waypoint in the list contains  [x,y,s,dx,dy] values. x and y are the waypoint's map coordinate position, the s value is the distance along the road to get to that waypoint in meters, the dx and dy values define the unit normal vector pointing outward of the highway loop.
 
