@@ -19,7 +19,7 @@ The goal of safely navigating can be met as shown in the picture below. The high
 
 ![alt_text][image1]
 
-The path is generated using the proposed spline method by placing three target points in frenet coordinates. Three points are needed to ensure that the trajectory has a smooth ending with correct d-value, heading and heading differential.
+The path is generated using the proposed spline method by placing three target points in frenet coordinates. Three points are needed to ensure that the trajectory has a smooth ending with correct offset in frenet d, heading and heading derivative.
 A simple enviroment model is introduced that checks the three lanes in speed dependent ranges for objects. if a object is found in an adjacent lane, this lane is removed from the maneuvers list. If an object is detected on the ego lane, if possible a lane change is executed. Otherwise the vehicle slows down to follow until a maneuver is available. To maximize maneuver availability the vehicle drives in the center lane whenever possible without being slowed down.
 In the picture below the command line output can be seen to understand what is going on. The vehicle just decided to change lanes due to a slower vehicle in front. To avoid changing back too early, the vehicle has to reach the lane target first before the maneuver is over. Then new maneuvers can be planned.
 
